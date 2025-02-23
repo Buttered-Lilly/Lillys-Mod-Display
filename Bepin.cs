@@ -6,7 +6,7 @@ using BepInEx.Bootstrap;
 
 namespace Lillys_Mod_Display
 {
-    [BepInPlugin("516b9dfb-3ee3-4483-9be3-f685db5717ac", "Lillys Mod Display", "1.0.0")]
+    [BepInPlugin("516b9dfb-3ee3-4483-9be3-f685db5717ac", "Lillys Mod Display", "1.0.1")]
     public class Bepin : BaseUnityPlugin
     {
         ModDisplayCore disCore;
