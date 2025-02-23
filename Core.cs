@@ -83,7 +83,7 @@ namespace Lillys_Mod_Display
                         DisplayCoreInstance.modlister = g.AddComponent<TextMeshProUGUI>();
                         g.transform.localPosition = new Vector3(-280, -25, 0);
                         g.transform.localScale = Vector3.one * 0.75f;
-                        DisplayCoreInstance.modlister.text = "LILLY's beyond limits really long test name \n newlin";
+                        DisplayCoreInstance.modlister.text = "";
                         DisplayCoreInstance.modlister.enableAutoSizing = true;
                         DisplayCoreInstance.modlister.paragraphSpacing = 55;
                     }
