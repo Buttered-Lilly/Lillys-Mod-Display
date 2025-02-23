@@ -1,6 +1,7 @@
 ﻿using BepInEx;
 using UnityEngine;
 using HarmonyLib;
+using BepInEx.Bootstrap;
 
 
 namespace Lillys_Mod_Display
@@ -17,6 +18,17 @@ namespace Lillys_Mod_Display
             g.hideFlags = UnityEngine.HideFlags.HideAndDontSave;
             disCore = g.AddComponent<ModDisplayCore>();
             disCore.Logger = logger;
+            foreach (var mod in Chainloader.PluginInfos)
+            {
+                try
+                {
+                    disCore.ModList.Add(mod.Value.Metadata.Name);
+                }
+                catch (Exception e)
+                {
+
+                }
+            }
             var harmony = new HarmonyLib.Harmony("Lillys Mod Display");
             harmony.PatchAll();
         }

@@ -26,7 +26,6 @@ namespace Lillys_Mod_Display
                 try
                 {
                     disCore.ModList.Add(melon.Info.Name);
-                    MelonLogger.Msg(melon.Info.Name);
                 }
                 catch (Exception e)
                 {
